@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "48589266-ccd4-460e-9e46-5b04eff65686": {
+      "ProjectGuid": "48589266-ccd4-460e-9e46-5b04eff65686",
+      "DisplayName": "Automarket.Domain",
+      "ColorIndex": 0
+    },
+    "0bfa684e-356a-4f4a-99b2-7defbe617a1c": {
+      "ProjectGuid": "0bfa684e-356a-4f4a-99b2-7defbe617a1c",
+      "DisplayName": "Automarket",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
