@@ -10,7 +10,12 @@
       "ProjectGuid": "0bfa684e-356a-4f4a-99b2-7defbe617a1c",
       "DisplayName": "Automarket",
       "ColorIndex": 1
+    },
+    "cdab0b04-b62d-435a-9278-1a259ae10af1": {
+      "ProjectGuid": "cdab0b04-b62d-435a-9278-1a259ae10af1",
+      "DisplayName": "CarsDbContext",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

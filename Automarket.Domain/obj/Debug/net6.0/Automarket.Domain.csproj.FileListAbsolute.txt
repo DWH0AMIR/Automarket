@@ -1,0 +1,12 @@
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.deps.json
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\bin\Debug\net6.0\ref\Automarket.Domain.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\bin\Debug\net6.0\Automarket.Domain.pdb
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.csproj.AssemblyReference.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.AssemblyInfoInputs.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.AssemblyInfo.cs
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.csproj.CoreCompileInputs.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\ref\Automarket.Domain.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.Domain\obj\Debug\net6.0\Automarket.Domain.pdb

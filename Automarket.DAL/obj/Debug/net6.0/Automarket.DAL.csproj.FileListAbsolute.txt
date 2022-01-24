@@ -1,0 +1,15 @@
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\Automarket.DAL.deps.json
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\Automarket.DAL.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\ref\Automarket.DAL.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\Automarket.DAL.pdb
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\Automarket.Domain.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\bin\Debug\net6.0\Automarket.Domain.pdb
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.csproj.AssemblyReference.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.AssemblyInfoInputs.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.AssemblyInfo.cs
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.csproj.CoreCompileInputs.cache
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.csproj.CopyComplete
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\ref\Automarket.DAL.dll
+D:\Learning\C#\CSharp\Automarket\Automarket.DAL\obj\Debug\net6.0\Automarket.DAL.pdb
