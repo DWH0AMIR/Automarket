@@ -15,7 +15,17 @@
       "ProjectGuid": "cdab0b04-b62d-435a-9278-1a259ae10af1",
       "DisplayName": "CarsDbContext",
       "ColorIndex": 2
+    },
+    "4025bb2f-c46e-4d9e-8730-46739c48410a": {
+      "ProjectGuid": "4025bb2f-c46e-4d9e-8730-46739c48410a",
+      "DisplayName": "Automarket.DAL",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
