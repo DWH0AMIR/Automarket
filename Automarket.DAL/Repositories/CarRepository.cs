@@ -13,24 +13,42 @@ namespace Automarket.DAL.Repositories
             _db = db;
         }
 
-        public bool Create(Car model)
+        public async Task<bool> CreateAsync(Car model)
         {
-            throw new NotImplementedException();
+            if (model is not null)
+            {
+                await _db.Cars.AddAsync(model);
+                await _db.SaveChangesAsync();
+
+                return true;
+            }
+
+            return false;
         }
 
-        public bool Delete(Car model)
+        public async Task<bool> Delete(Car model)
         {
-            throw new NotImplementedException();
+            if (model is not null)
+            {
+                _db.Cars.Remove(model);
+                await _db.SaveChangesAsync();
+
+                return true;
+            }
+
+            return false;
         }
 
-        public Car Get(int id)
+        public async Task<Car> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _db.Cars
+                .FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public Car GetByName(string name)
+        public async Task<Car> GetByName(string name)
         {
-            throw new NotImplementedException();
+            return await _db.Cars
+                .FirstOrDefaultAsync(c => c.Name == name);
         }
 
         public async Task<IEnumerable<Car>> Select()

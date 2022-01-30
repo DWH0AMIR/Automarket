@@ -2,12 +2,12 @@ namespace Automarket.DAL.Interfaces
 {
     public interface IBaseRepository<T>
     {
-        bool Create(T model);
+        Task<bool> CreateAsync(T model);
 
-        T Get(int id);
+        Task<T> Get(int id);
 
         Task<IEnumerable<T>> Select();
 
-        bool Delete(T model);
+        Task<bool> Delete(T model);
     }
 }
