@@ -62,3 +62,5 @@ D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\runtimes\win\lib\ne
 D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\Automarket.DAL.dll
 D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\Automarket.DAL.pdb
+D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\Automarket.Service.dll
+D:\Learning\C#\CSharp\Automarket\Automarket\bin\Debug\net6.0\Automarket.Service.pdb
