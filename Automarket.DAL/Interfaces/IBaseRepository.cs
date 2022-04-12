@@ -4,10 +4,12 @@ namespace Automarket.DAL.Interfaces
     {
         Task<bool> CreateAsync(T model);
 
-        Task<T> Get(int id);
+        Task<T> Update(T model);
 
-        Task<IEnumerable<T>> Select();
+        Task<T> GetByIdAsync(int id);
 
-        Task<bool> Delete(T model);
+        Task<IEnumerable<T>> GetAllAsync();
+
+        Task<bool> DeleteAsync(T model);
     }
 }

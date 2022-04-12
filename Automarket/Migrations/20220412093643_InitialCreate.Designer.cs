@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Automarket.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220124111823_EditIdKey")]
-    partial class EditIdKey
+    [Migration("20220412093643_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

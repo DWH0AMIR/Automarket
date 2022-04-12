@@ -26,7 +26,7 @@ namespace Automarket.DAL.Repositories
             return false;
         }
 
-        public async Task<bool> Delete(Car model)
+        public async Task<bool> DeleteAsync(Car model)
         {
             if (model is not null)
             {
@@ -39,22 +39,29 @@ namespace Automarket.DAL.Repositories
             return false;
         }
 
-        public async Task<Car> Get(int id)
+        public async Task<Car> GetByIdAsync(int id)
         {
             return await _db.Cars
                 .FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task<Car> GetByName(string name)
+        public async Task<Car> GetByNameAsync(string name)
         {
             return await _db.Cars
                 .FirstOrDefaultAsync(c => c.Name == name);
         }
 
-        public async Task<IEnumerable<Car>> Select()
+        public async Task<IEnumerable<Car>> GetAllAsync()
         {
             return await _db.Cars.ToListAsync();
         }
 
+        public async Task<Car> Update(Car model)
+        {
+            _db.Cars.Update(model);
+            await _db.SaveChangesAsync();
+
+            return model;
+        }
     }
 }

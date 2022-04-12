@@ -2,6 +2,7 @@
 using Automarket.Domain.Enums;
 using Automarket.Domain.Models;
 using Automarket.Domain.Responses;
+using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -18,12 +19,43 @@ namespace Automarket.Service.Implementations
         public CarService(ICarRepository carRepository) => 
             (_carRepository) = (carRepository);
 
+
+        public async Task<IBaseResponse<Car>> GetCarByName(string name)
+        {
+            var baseResponse = new BaseResponse<Car>();
+            try
+            {
+                var car = await _carRepository.GetByNameAsync(name);
+                if (car is null)
+                {
+                    baseResponse.Description = "Car not found.";
+                    baseResponse.StatusCode = StatusCode.CarNotFound;
+
+                    return baseResponse;
+                }
+
+                baseResponse.Data = car;
+                baseResponse.StatusCode = StatusCode.OK;
+
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+
+                return new BaseResponse<Car>()
+                {
+                    Description = $"[GetCar] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
         public async Task<IBaseResponse<IEnumerable<Car>>> GetCars()
         {
             var baseResponse = new BaseResponse<IEnumerable<Car>>();
             try
             {
-                var cars = await _carRepository.Select();
+                var cars = await _carRepository.GetAllAsync();
                 if (cars.Count() == 0)
                 {
                     baseResponse.Description = "Найдено 0 элементов";
@@ -41,7 +73,133 @@ namespace Automarket.Service.Implementations
             {
                 return new BaseResponse<IEnumerable<Car>>()
                 {
-                    Description = $"[GetCars] : {ex.Message}"
+                    Description = $"[GetCars] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<CarViewModel>> CreateCar(CarViewModel carViewModel)
+        {
+            var baseResponse = new BaseResponse<CarViewModel>();
+            try
+            {
+                var car = new Car()
+                {
+                    Description = carViewModel.Description,
+                    DateOfCreation = carViewModel.DateOfCreation,
+                    Speed = carViewModel.Speed,
+                    Model = carViewModel.Model,
+                    Price = carViewModel.Price,
+                    Name = carViewModel.Name,
+                    TypeOfCar = (TypeCar)Convert.ToInt32(carViewModel.TypeOfCar),
+
+                };
+
+                await _carRepository.CreateAsync(car);
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<CarViewModel>()
+                {
+                    Description = $"[CreateCar] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+
+            }
+            return baseResponse;
+        }
+
+        public async Task<IBaseResponse<Car>> GetCarById(int id)
+        {
+            var baseResponse = new BaseResponse<Car>();
+            try
+            {
+                var car = await _carRepository.GetByIdAsync(id);
+                if (car is null)
+                {
+                    baseResponse.Description = "Car not found.";
+                    baseResponse.StatusCode = StatusCode.CarNotFound;
+
+                    return baseResponse;
+                }
+
+                baseResponse.Data = car;
+                baseResponse.StatusCode = StatusCode.OK;
+
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+
+                return new BaseResponse<Car>()
+                {
+                    Description = $"[GetCarByName] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<bool>> DeleteById(int id)
+        {
+            var baseResponse = new BaseResponse<bool>();
+            try
+            {
+                var car = await _carRepository.GetByIdAsync(id);
+                if (car is null)
+                {
+                    baseResponse.Description = "Car not found.";
+                    baseResponse.StatusCode = StatusCode.CarNotFound;
+
+                    return baseResponse;
+                }
+
+                await _carRepository.DeleteAsync(car);
+            }
+            catch (Exception ex)
+            {
+
+                return new BaseResponse<bool>()
+                {
+                    Description = $"[DeleteCar : {ex.Message}]",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+
+            return baseResponse;
+        }
+
+        public async Task<IBaseResponse<Car>> Edit(int id, CarViewModel model)
+        {
+            var baseResponse = new BaseResponse<Car>();
+            try
+            {
+                var car = await _carRepository.GetByIdAsync(id);
+                if (car is null)
+                {
+                    baseResponse.StatusCode = StatusCode.CarNotFound;
+                    baseResponse.Description = "Car not found";
+
+                    return baseResponse;
+                }
+
+                car.Description = model.Description;
+                car.Model = model.Model;
+                car.Price = model.Price;
+                car.Speed = model.Speed;
+                car.DateOfCreation = model.DateOfCreation;
+                car.Name = model.Name;
+
+                await _carRepository.Update(car);
+
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<Car>()
+                {
+                    Description = $"[Edit] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
                 };
             }
         }

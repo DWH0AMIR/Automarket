@@ -1,6 +1,5 @@
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\Automarket.Service.deps.json
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\Automarket.Service.dll
-D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\ref\Automarket.Service.dll
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\Automarket.Service.pdb
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\Automarket.DAL.dll
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\bin\Debug\net6.0\Automarket.Domain.dll
@@ -15,3 +14,4 @@ D:\Learning\C#\CSharp\Automarket\Automarket.Service\obj\Debug\net6.0\Automarket.
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\obj\Debug\net6.0\Automarket.Service.dll
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\obj\Debug\net6.0\ref\Automarket.Service.dll
 D:\Learning\C#\CSharp\Automarket\Automarket.Service\obj\Debug\net6.0\Automarket.Service.pdb
+D:\Learning\C#\CSharp\Automarket\Automarket.Service\obj\Debug\net6.0\refint\Automarket.Service.dll
